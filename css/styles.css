@@ -148,10 +148,22 @@ color: var(--color-link);
 
 /*--------------------MAINE-------------------*/
 
+
 .hero{
-        background-color:#2F303A ;
+        background-color: #2F303A;
+}
+
+.hero-content{
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image:linear-gradient(rgba(47, 55, 58, 0.4),rgba(47, 55, 58, 0.4)),url(../imges/hero-bg.jpg);
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 1600px;
+        height: 600px;
 }
 
 .hero-title{
@@ -244,10 +256,30 @@ color: var(--color-link);
         background-color: #F5F4FA;
 }
 
-.team-box{
-        padding-top: 30px;
-        padding-bottom: 30px;
+
+.team-soc{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
 }
+
+.team-soc-link{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill:#afb1b8;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus{
+        background-color:#2196F3;
+        fill: #FFFFFF;
+}
+
 .team-list{
         display: flex;
         gap: 30px;
@@ -266,6 +298,7 @@ color: var(--color-link);
 }
 
 .team-name{
+        margin-top: 30px;
         margin-bottom: 10px;
 
         font-weight: 500;
@@ -277,11 +310,51 @@ color: var(--color-link);
 }
 
 .team-text{
+        margin-bottom: 16px;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--color-text);
+}
+
+
+.clients-title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-title);
+}
+.clients-list{
+        display: flex;
+        gap: 30px;
+}
+.clients-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+}
+
+.clients-icon{
+        
+}
+
+.clients-link{
+
+        justify-content: center;
+        align-items: center;
+        fill: #AFB1B8;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+        fill:var(--color-link);
 }
 
 /*-------------------------FOOTER---------------*/
