@@ -125,7 +125,7 @@ color: var(--color-link);
 .header-link:focus{
     color: var(--color-link);
 }
-.header-mailto,
+
 .header-tel{
         padding-top: 32px;
         padding-bottom: 32px;
@@ -135,15 +135,43 @@ color: var(--color-link);
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--color-text);
+        display: flex;
+        align-items: center;
 }
+
 .header-mailto:hover,
 .header-mailto:focus,
 .header-tel:hover,
 .header-tel:focus{
     color: var(--color-link);
 }
+
 .header-list{
         margin-left: auto;
+}
+
+.header-mailto{
+        padding-top: 32px;
+        padding-bottom: 32px;
+                
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--color-text);
+        display: flex;
+        align-items: center;
+}
+
+.icon-mailto{
+        margin-right: 10px;
+        fill: currentColor;
+}
+
+.icon-tel{
+        margin-right: 10px;
+        fill: currentColor;
+
 }
 
 /*--------------------MAINE-------------------*/
@@ -154,9 +182,7 @@ color: var(--color-link);
 }
 
 .hero-content{
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image:linear-gradient(rgba(47, 55, 58, 0.4),rgba(47, 55, 58, 0.4)),url(../imges/hero-bg.jpg);
+        background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-bg.jpg);
         margin-left: auto;
         margin-right: auto;
         background-repeat: no-repeat;
@@ -164,7 +190,10 @@ color: var(--color-link);
         background-size: cover;
         max-width: 1600px;
         height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
 }
+
 
 .hero-title{
         margin-bottom: 30px;
@@ -215,6 +244,16 @@ color: var(--color-link);
 
 .benefits-item:nth-child(4n){
         margin-right: 0;
+}
+
+.thumb{
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
 }
 
 .benefits-title {
@@ -293,8 +332,10 @@ color: var(--color-link);
         letter-spacing: 0.03em;
         color: var(--color-title);
 }
+
 .team-item{
         background-color: #FFFFFF;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team-name{
@@ -335,32 +376,34 @@ color: var(--color-link);
         display: flex;
         justify-content: center;
         align-items: center;
+
+}
+.clients-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: #AFB1B8;
+        padding: 16px 32px;
         width: 170px;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
 }
 
-.clients-icon{
-        
-}
-
-.clients-link{
-
-        justify-content: center;
-        align-items: center;
-        fill: #AFB1B8;
-}
-
 .clients-link:hover,
-.clients-link:focus{
-        fill:var(--color-link);
+.clients-link:focus {
+        fill: var(--color-link);
+        border: 1px solid var(--color-link);
 }
+.clients-icon{
+
+
+}
+
+
 
 /*-------------------------FOOTER---------------*/
 .footer{
-        padding-top: 60px;
-        padding-bottom: 60px;
         background-color: #2F303A;
 }
 .link-addres{
@@ -393,6 +436,60 @@ color: var(--color-link);
 .footer-tel:focus {
     color:#FFFFFF ;
 }
+
+.footer-bloc{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 231px;
+        margin-right: 70px;
+}
+
+.social-networks-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+}
+
+.social-networks-list {
+        display: flex;
+        width: 206px;
+}
+
+.social-networks-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #FFFFFF;
+}
+
+.social-networks-link:hover,
+.social-networks-link:focus {
+        background-color: #2196F3;
+}
+
+.social-networks-list {
+        display: flex;
+        gap: 10px;
+}
+
+.social-networks {
+        padding-top: 72px;
+        padding-bottom: 100px;
+}
+
+.footer-box{
+        display: flex;
+}
+
+
 
 
 /*-------------------------PORTFOLIO---------------*/
