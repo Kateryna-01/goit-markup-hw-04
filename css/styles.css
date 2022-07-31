@@ -177,11 +177,9 @@ color: var(--color-link);
 /*--------------------MAINE-------------------*/
 
 
-.hero{
+.hero{ 
         background-color: #2F303A;
-}
-
-.hero-content{
+        background-color: #2F303A;
         background-image: linear-gradient(rgba(47, 55, 58, 0.4), rgba(47, 55, 58, 0.4)), url(../imges/hero-bg.jpg);
         margin-left: auto;
         margin-right: auto;
@@ -297,7 +295,6 @@ color: var(--color-link);
 
 
 .team-soc{
-        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -340,7 +337,6 @@ color: var(--color-link);
 }
 
 .team-name{
-        margin-top: 30px;
         margin-bottom: 10px;
 
         font-weight: 500;
@@ -358,6 +354,10 @@ color: var(--color-link);
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--color-text);
+}
+
+.team-box{
+        padding: 30px 0;
 }
 
 
@@ -384,7 +384,6 @@ color: var(--color-link);
         justify-content: center;
         align-items: center;
         fill: #AFB1B8;
-        padding: 16px 32px;
         width: 170px;
         height: 92px;
         border: 1px solid #AFB1B8;
@@ -396,16 +395,13 @@ color: var(--color-link);
         fill: var(--color-link);
         border: 1px solid var(--color-link);
 }
-.clients-icon{
-
-
-}
 
 
 
 /*-------------------------FOOTER---------------*/
 .footer{
         background-color: #2F303A;
+        padding: 60px 0;
 }
 .link-addres{
         font-style: normal;
@@ -439,9 +435,8 @@ color: var(--color-link);
 }
 
 .footer-bloc{
-        padding-top: 60px;
-        padding-bottom: 60px;
-        width: 231px;
+
+
         margin-right: 70px;
 }
 
@@ -481,13 +476,9 @@ color: var(--color-link);
         gap: 10px;
 }
 
-.social-networks {
-        padding-top: 72px;
-        padding-bottom: 100px;
-}
-
 .footer-box{
         display: flex;
+        align-items: baseline;
 }
 
 
@@ -508,8 +499,10 @@ color: var(--color-link);
 
 .box-portfolio{
         padding: 20px 24px;
-        border: #EEEEEE 1px solid;
+        border: 1px solid #EEEEEE;
+        background: #FFFFFF;
         }
+
 
 
 .portfolio-btn{
@@ -542,18 +535,14 @@ color: var(--color-link);
         color: #FFFFFF;
         background-color: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
 }
 
-.portfolio-item {
-        background: #FFFFFF;
-        margin: 15px;
-        cursor: pointer;
+.portfolio-link{
+        display: block;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-        border: 1px solid #EEEEEE;
+.portfolio-link:hover,
+.portfolio-link:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -564,7 +553,7 @@ color: var(--color-link);
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--color-title);
-        cursor: pointer;
+
 }
 
 .portfolio-text{
@@ -579,8 +568,7 @@ color: var(--color-link);
 .portfolio-img-list{
         display: flex;
         flex-wrap: wrap; 
-        margin: -15px;
-         
+        gap: 30px;     
 }
 
 
